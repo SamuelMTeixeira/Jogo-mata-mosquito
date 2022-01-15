@@ -1,0 +1,58 @@
+body {
+    background: url(../imgs/bg.jpg) no-repeat;
+    background-attachment: fixed ;
+    background-size: cover;
+}
+.img-mosca-1 {
+    width: 50px;
+    height: 50px;
+}
+.img-mosca-2 {
+    width: 70px;
+    height: 70px;
+}
+.img-mosca-3 {
+    width: 100px;
+    height: 100px;
+}
+
+.lado-direito {
+    transform: scaleX(1);
+}
+.lado-esquerdo {
+    transform: scaleX(-1);
+}
+.painel {
+    position: absolute;
+    width: 210px;
+    background: #ffffff;
+    opacity: 0.5;
+    padding: 10px;
+    top: 0;
+    right: 0;
+}
+.vidas img{
+    padding-right: 4px;
+}
+.cronometro {
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+time {
+    font-weight: bold;
+}
+.btn-reiniciar {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+@keyframes rotacionarReload {
+    0% {
+        transform: rotate(-180deg);
+    }
+}
+.btn-reiniciar:hover i {
+    animation: rotacionarReload 1s;
+}
